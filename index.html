@@ -116,7 +116,7 @@
                         <div id="sspbid_1003"></div>
                     </div>
                     <div id="box5">
-                        <div id="sspbid_1004" ></div>
+                        <div id="sspbid_1004"></div>
                     </div>
                 </div>
 
@@ -132,14 +132,13 @@
             a.async = !0;
             a.src = d;
             2 <= arguments.length && (a.onload = b, a.onreadystatechange = function () {
-                4 != a.readyState && "complete" != a.readyState || b()
+                4 != a.readyState && "complete" != a.readyState ||
+                    b()
             });
-
             a.onerror = function () {
                 if ("undefined" != typeof c) try {
                     c()
-                }
-                    catch (e) { }
+                } catch (e) { }
             };
             document.getElementsByTagName("head")[0].appendChild(a)
         }
@@ -440,7 +439,7 @@
                     "pr": 28596865446,
                     "color": "22338b",
                     "link": "https:\/\/nhathuoclongchau.com\/",
-                    "icon": "https://raw.githubusercontent.com/NguyenHoangTien24012000/demoadxstore/master/images/logoNew.png",
+                    "icon": "https://raw.githubusercontent.com/NguyenHoangTien24012000/demoadxstore/master/images/logoNew1.png",
                     "title": "Nh\u00C3\u00A0 thu\u00E1\u00BB\u2018c Long Ch\u00C3\u00A2u",
                     "brandname": "Tủ thuốc gia đình",
                     "sspr": "",
@@ -717,7 +716,7 @@
                     "pr": 28596865446,
                     "color": "22338b",
                     "link": "https:\/\/nhathuoclongchau.com\/",
-                    "icon": "https://raw.githubusercontent.com/NguyenHoangTien24012000/demoadxstore/master/images/logoNew.png",
+                    "icon": "https://raw.githubusercontent.com/NguyenHoangTien24012000/demoadxstore/master/images/logoNew1.png",
                     "title": "Nh\u00C3\u00A0 thu\u00E1\u00BB\u2018c Long Ch\u00C3\u00A2u",
                     "brandname": "Tủ thuốc gia đình",
                     "sspr": "",
@@ -1529,8 +1528,30 @@
                 "height": 300
             }]
         });
+
+        setTimeout(() => {
+            let a = document.querySelector("#adnzone_sponsor_1003").contentWindow.document;
+            a.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left").style.bottom = '16px';
+            a.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left > div.brand__text").style.marginTop = "2px";
+            a.querySelector("#boxTuThuoc > div.box__brand").style.paddingLeft = "0px";
+            console.log("Test", a)
+            let b = document.querySelector("#adnzone_sponsor_1004").contentWindow.document;
+            b.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left").style.bottom = '17px';
+            b.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left > div.brand__text").style.marginTop = "0px";
+            let c = document.querySelector("#adnzone_sponsor_1000").contentWindow.document;
+            c.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left").style.marginLeft = "0px";
+            c.querySelector("#boxTuThuoc > div.box__brand > div.box__brand--left").style.bottom = "9px";
+            let d = document.querySelector("#adnzone_sponsor_1001").contentWindow.document;
+            d.querySelector("#boxTuThuoc > div.box__brand").style.marginLeft = '0px';
+            let e = document.querySelector("#adnzone_sponsor_1002").contentWindow.document;
+            e.querySelector("#boxTuThuoc > div.box__brand").style.marginLeft = '0px';
+        }, 600)
+
     </script>
+
     </html>
+
+
 </body>
 
 </html>
